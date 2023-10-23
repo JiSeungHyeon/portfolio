@@ -1,0 +1,237 @@
+@import url('common.css');
+
+body{
+  background-color: #202020;
+  color: #fff;
+}
+
+main{
+  position: relative;
+  width: 100%;
+}
+main::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 400vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.5;
+  filter: blur(10px);
+  background:url(../image/visual1.jpg);
+	background-size:cover;
+  z-index: -10;
+}
+
+main h2{
+  margin: 100px auto 25px;
+  font-size: 8vw;
+  text-align: center;
+}
+main h2 b{
+  display:block;
+  position: relative;
+  margin-top: 2vw;
+  font-size: 5.5vw;
+  font-weight:500;
+  font-family: 'Cormorant', serif;
+}
+main h2 b::before{
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 1px;
+  top: -2vw;
+  left: 50%;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+main h2 b::after{
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 1px;
+  top: -1vw;
+  left: 50%;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+main .visual-img{
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: 120vw;
+}
+
+main img[alt=visual]{
+  position: absolute;
+  display: block;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: auto;
+}
+main img[alt=Album]{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: auto;
+}
+
+
+main ul{
+  width: 65%;
+  margin: 25px auto 50px;
+}
+
+main ul li{
+  font-size: 4vw;
+  display: flex;
+  border-bottom: 1px solid #fff;
+}
+main ul li span{
+  display: block;
+  margin: 1.5vw;
+}
+main ul li p{
+  border-right: 1px solid #fff;
+  padding: 1.5vw;
+}
+main ul li:last-child{border: none}
+
+section{
+  position: relative;
+  width: 100%;
+  border-radius: 500px 500px 0 0;
+  overflow: hidden;
+  z-index: -5;
+  padding-bottom:20vw;
+  background-color: #202020;
+}
+section::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:url(../image/patten-2.png) center bottom;
+	background-size:cover;
+  opacity: 0.1;
+}
+
+.title h3{
+  margin: 100px auto 25px;
+  font-size: 6vw;
+  text-align: center;
+}
+.title h3 span{
+  display: block;
+  margin-top: 2vw;
+  font-size: 4.5vw;
+  font-family: 'Cormorant', serif;
+}
+
+.title p{
+  position: relative;
+  width: 80%;
+  height: 40vw;
+  margin: auto;
+  font-size:3vw;
+  text-align: center;
+}
+.title p::before{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 40%;
+  bottom: 0;
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
+.txt_box{
+  margin: 25px auto;
+  width: 90%;
+  font-size: 4vw;
+  font-weight: 700;
+}
+.txt_box p{
+  margin-top: 1vw;
+  font-size: 3.5vw;
+  font-weight: 200;
+}
+
+.img{width: 100%;}
+
+.img .img-box{
+  position: relative;
+  width: 100%;
+  height: 40vw;
+  line-height: 40vw;
+  margin: 10vw auto 0;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+@keyframes fadeInUp{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.img .img-box p{
+  text-shadow: 1px 1px #000;
+  transition: 0.3s;
+  font-weight: 700;
+  animation: fadeInUp 1.5s ease;
+}
+
+.img .img-box:nth-child(1){
+  background:url(../image/sub03-01.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.img .img-box:nth-child(2){
+  background:url(../image/sub03-02.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.img .img-box:nth-child(3){
+  background:url(../image/sub03-03.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.img .img-box:nth-child(4){
+  background:url(../image/sub03-04.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.img .img-box:nth-child(5){
+  background:url(../image/sub03-05.png) no-repeat center bottom;
+	background-size:cover;
+}
+.img .img-box:nth-child(6){
+  background:url(../image/sub03-06.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+
+footer{
+  color: #000;
+  padding:0;
+  padding-bottom:7vh;
+}

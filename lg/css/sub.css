@@ -1,0 +1,674 @@
+@charset "utf-8";
+@import url(header&footer.css);
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* main__________________________ */
+main{
+  width:100vw;
+  position:relative;
+}
+.visual{
+  height:600px;
+  width:100%;
+  padding-top:300px;
+  margin:auto;
+  text-align:center;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.visual:after{
+  content:'고객의 아름다움과 꿈을 실현하는 최고의 생활문화 기업';
+  position:absolute;
+  top:60%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  display:inline-block;
+  font-size:30px;
+  width:630px;
+  overflow:hidden;
+  color:#C60D41;
+  text-shadow:0 0 5px #F9F9F9;
+  font-weight:600;
+}
+.slide ul{
+  position:absolute;
+  top:0;
+  left:0;
+  display:flex;
+}
+.slide ul li{
+  width:100vw;
+  height:600px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:#F9F9F9;
+}
+.slide ul li:nth-child(1){background:url(../image/visual1.jpg) center;}
+.slide ul li:nth-child(2){background:url(../image/visual2.jpg) center 15%;}
+.slide ul li:nth-child(3){background:url(../image/visual3.jpg) center 40%;}
+
+/* section___________________________ */
+section{
+  width:100vw;
+  position:relative;
+}
+.section_in{
+  width:1200px;
+  height:auto;
+  margin:auto;
+  padding-top:50px;
+  padding-bottom:260px;
+}
+.smenu{
+  display:flex;
+  justify-content:center;
+}
+.smenu ul{
+  display:flex;
+  gap:30px;
+  margin:50px;
+}
+.smenu ul li a{
+  background-color:#2F4858;
+  padding:10px;
+  color:#F9F9F9;
+  transition:0.35s;
+}
+.smenu ul li:hover a{background-color:#C60D41;}
+.smenu ul li .active{background-color:#C60D41;}
+.section_in h3{
+  text-align:center;
+  font-size:26px;
+  letter-spacing:5px;
+  margin-bottom:20px;
+  color:#2F4858;
+  text-transform:uppercase;
+}
+
+/* 1-1 회사개요 */
+.company{
+  display:flex;
+  padding:150px 0;
+  box-sizing:border-box;
+}
+@keyframes bounce-in-left {
+  0% {
+    transform: translateX(-600px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateX(-68px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateX(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateX(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+}
+.c_image{
+  margin:0 25px;
+  animation:bounce-in-left 1s both;
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.c_text{
+  animation:slide-in-bottom 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay:1.1s;
+  margin-top:55px;
+}
+.c_text h4{
+  font-size:20px;
+  color:#AC236A;
+}
+.c_text b{
+  font-size:22px;
+  display:block;
+  line-height:32px;
+  margin:10px 0;
+}
+.c_text em, .c_text p{
+  font-style:normal;
+  font-size:18px;
+  line-height:24px;
+  letter-spacing:1px;
+}
+.c_text p{margin:20px 0;}
+
+/* 1-2 사업분야 */
+.business_in{
+	width:1200px;
+	height:800px;
+	text-align:center;
+  padding:150px;
+	position:relative;
+}
+.business_in h3{
+  position:absolute;
+  left:40%;
+  top:0;
+  transform:translate(-50%,-50%);
+  font-size:26px;
+  letter-spacing:5px;
+  margin-bottom:20px;
+  color:#2F4858;
+  text-transform:uppercase;
+}
+.image{
+	position: absolute;
+	top:5%;
+	left: 0;
+	z-index: 100;
+	transition: 0.5s;
+}
+dl{
+	position: absolute;
+  top:5%;
+	left: 0;
+	z-index: 200;
+}
+dl dt{
+	width:60px;
+	height:900px;
+	background: rgba(255, 255, 255, 0.6);
+	border-right: 1px solid rgba(255, 255, 255, 0.4);
+  float:left;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.3s;
+}
+dl dt strong{
+	width: 20px;
+	margin: auto;
+	font-size:32px;
+	margin-top: 20px;
+	font-weight: 700;
+  writing-mode:vertical-rl;
+  color: #2F4858;
+}
+dt.selected{background: rgba(255,255,255, 0.9);}
+dl dd{
+	width:1020px;
+	height:900px;
+	display: none;
+	float: left;
+	position: relative;
+	overflow: auto;
+}
+dl dd:first-of-type{display: block;}
+.content{padding:100px;}
+.content .description{
+	color:#2F4858;
+	font-size:18px;
+  text-indent:9px;
+	line-height:30px;
+  text-align:left;
+  background-color:rgba(249, 249, 249,0.7);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  padding:50px;
+}
+
+/* 2 BEAUTIFUL */
+.beautiful{
+  width:100vw;
+  height:1700px;
+  margin:auto;
+  background:url(../image/nature.jpg) no-repeat;
+  background-size:cover;
+}
+.beautiful_in{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:1200px;
+  transform:translate(-50%,-50%);
+  padding:20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius:16px;
+  box-shadow:0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter:blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  text-align:center;
+  transition:0.75s;
+}
+.beautiful_in:hover{  background: rgba(255, 255, 255, 1);}
+.beautiful_in .location{text-align:left;}
+.beautiful_in h3{
+  text-align:center;
+  font-size:26px;
+  letter-spacing:5px;
+  margin-bottom:20px;
+  color:#0a210f;
+  text-transform:uppercase;
+}
+.nature_logo img{margin:40px 0;}
+.nature_text{
+  margin-top:20px;
+  font-size:22px;
+  line-height:36px;
+}
+.natue_link{
+  display:flex;
+  margin:15px;
+  justify-content:center;
+}
+.natue_link li a{
+  font-size:26px;
+  margin:0 10px;
+  color:#0a210f;
+}
+
+/* 3-1 헤어케어 */
+.hair_in{
+  width:100%;
+  height:inherit;
+  text-align:center;
+  padding:50px;
+  box-sizing:border-box;
+  border-bottom:1px solid #F9F9F9;
+}
+.hair_in .location{
+  text-align:left;
+  color:#2F4858;
+}
+.hair_in h3{
+  text-align:center;
+  font-size:26px;
+  letter-spacing:5px;
+  margin-bottom:20px;
+  color:#2F4858;
+  text-transform:uppercase;
+}
+.hair{
+  height:100vh;
+  width:1200px;
+  margin:auto;
+  padding:80px 0;
+  display:flex;
+}
+.hair li{
+  border-right:5px solid #F9F9F9;
+  flex:1;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  transition:0.5s;
+}
+.hair li img{
+  width:940px;
+  height:540px;
+}
+.hair li:hover{flex:16;}
+.hair li:hover .hair_content{opacity:1;}
+.hair_content{
+  position:absolute;
+  color:#2F4858;
+  width:100%;
+  height:200px;
+  text-align:center;
+  padding-top:75px;
+  box-sizing:border-box;
+  transition:0.5s;
+  opacity:0;
+}
+.hair_content h4{font-size:26px;}
+.hair_content p{font-size:22px;}
+
+/* 3-2 스킨케어 */
+.skin{
+  width:1200px;
+  padding:100px 0;
+  display:grid;
+  grid-template-columns:repeat(2,2fr);
+}
+.veilment img, .physiogel img{
+  width:600px;
+  height:100%;
+}
+article{
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#2F4858;
+  color:#F9F9F9;
+}
+.skin_content h4{
+  font-size:24px;
+  margin-bottom:10px;
+  padding-bottom:10px;
+  border-bottom:1px solid #F9F9F9;
+  text-transform:capitalize;
+}
+.skin_content p{
+  font-size:20px;
+  line-height:28px;
+}
+
+/* 4-1 스파클링 */
+.tab{
+	display: flex;
+	justify-content: center;
+}
+.tab li{
+	width:70px;
+	height:70px;
+  line-height:70px;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #2F4858;
+  background-color:#2F4858;
+  color:#F9F9F9;
+  margin:0 20px;
+	cursor: pointer;
+  transition:0.35s;
+}
+.tab li:hover{
+  background-color:#AC236A;
+  border:1px solid #AC236A;
+}
+.tab li.active{
+	width:70px;
+	height:70px;
+  border-radius:50%;
+  border:1px solid #AC236A;
+  background-color:#AC236A;
+}
+.tab_contents{
+  margin:100px 0;
+	width:1300px;
+	height:400px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.tab_contents div ul{display:flex;}
+.tab_contents div ul li img{
+	width:270px;
+	height:270px;
+	border-radius:50%;
+	margin-right:30px;
+}
+.tab_contents div ul li figure{
+  position:relative;
+  overflow: hidden;
+}
+.tab_contents div ul li figure:before{
+	position:absolute;
+	top:0;
+	left:-75%;
+	z-index:2;
+	display:block;
+	content:'';
+	width:50%;
+	height:100%;
+	background:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	transform:skewX(-25deg);
+}
+.tab_contents div ul li figure:hover:before{
+	animation: shine 0.75s;
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+.tab_contents h3{
+	font-size:16px;
+	color:#AC236A;
+	font-weight:900;
+	text-align:center;
+	margin:10px 0;
+}
+.tab_contents p{
+	color:#141414;
+	margin:auto;
+  text-align:center;
+}
+.tab_contents div{display: none;}
+.tab_contents div.active{display: block;}
+
+/* 4-2 주스 */
+.juices{
+  position:relative;
+	width:1200px;
+  text-align:center;
+  margin-bottom:200px;
+}
+.j_img{
+  width:1200px;
+	height:500px;
+  margin:auto;
+}
+.j_img img{
+  width:900px;
+	height:inherit;
+	object-fit: cover;
+	display:none;
+	position:absolute;
+  border-radius:50px;
+  box-shadow:0 5px 20px rgba(47, 72, 88, 0.4);
+	top:40%;
+	left:50%;
+  transform:translate(-50%,-50%);
+}
+.j_img img:first-child{display:inline;}
+.j_thumb{margin-top:100px;}
+.j_thumb a{margin-right: 5px;}
+.j_thumb a.on img{
+  opacity: 1;
+  filter:none;
+}
+.j_thumb a img{
+	width:80px;
+	height:80px;
+  filter:grayscale(0.8);
+  border:2px solid transparent;
+  border-radius:50%;
+	opacity:0.5;
+  transition:0.5s;
+}
+.j_thumb a img:hover{
+  border:2px solid #C60D41;
+  filter:none;
+}
+.j_thumb a:hover img {opacity: 1;}
+.j_link a{
+  width:100px;
+  background-color:rgba(198, 13, 65,0.8);
+  padding:5px;
+  color:#F9F9F9;
+  display:none;
+	position:absolute;
+  top:105%;
+  left:50%;
+  transform:translateX(-50%);
+}
+.j_link a:hover{background-color:rgba(198, 13, 65,1);}
+.j_link a:first-child{display:inline;}
+
+/* 5 고객센터 */
+.chat{
+  position:fixed;
+  z-index:9999;
+  bottom:60px;
+  right:10px;
+  cursor:pointer;
+  transition:0.35s;
+}
+.chat:before{
+  content:'안녕하세요. LG생활건강 고객상담실입니다. 주문 및 배송 문의는 구입하신 쇼핑몰로 연락주세요.';
+  position:absolute;
+  bottom:100%;
+  right:100%;
+  width:280px;
+  padding:20px;
+  background-color:#C60D41;
+  color:#F9F9F9;
+  border-radius:40px;
+  display:none;
+}
+.chat:after{
+  content:'';
+  position:absolute;
+  right:120%;
+  bottom:85%;
+  width: 0;
+  height: 0;
+  border-bottom:20px solid transparent;
+  border-top:20px solid transparent;
+  border-left:20px solid transparent;
+  border-right:20px solid #C60D41;
+  display:none;
+}
+.chat:hover:before, .chat:hover:after{display:inline-block;}
+.chat i{
+  color:#F9F9F9;
+  font-size:24px;
+  line-height:35px;
+  background-color:#C60D41;
+  width:38px;
+  height:38px;
+  text-align:center;
+  border-radius:50%;
+}
+.cs_center{
+  width:800px;
+  margin:auto;
+  text-align:center;
+  position:relative;
+}
+.cs h3{
+  font-size:22px;
+  background-color: #2F4858;
+  color:#F9F9F9;
+  margin-top:20px;
+  padding:5px;
+}
+.cs h3:last-of-type{background:none;}
+.cs h3 a{
+  color:#2F4858;
+  border-bottom:2px solid #2F4858;
+  font-weight:700;
+  transition:0.35s;
+}
+.cs h3 a:hover{
+  color:#C60D41;
+  border-bottom:2px solid #C60D41;
+}
+.cs p{
+  font-size:18px;
+  font-weight:700;
+  line-height:26px;
+}
+.ask{
+  width:800px;
+  height:900px;
+  background-color:#2F4858;
+  padding:70px;
+  margin:100px 0;
+  color:#F9F9F9;
+  box-sizing:border-box;
+  transform:translate(0px,-200px);
+  opacity:0;
+  transition:all 0.75s;
+}
+.ask.scroll{
+  transform:translate(0px,0px);
+  opacity:1;
+  transition:all 0.75s;
+}
+.ask input, .ask textarea, .ask button{
+  border:none;
+  outline:none;
+  padding:5px;
+  margin:10px 0;
+  font-size:18px;
+}
+.ask input[type=file]{
+  background-color: #F9F9F9;
+  color:#2F4858;
+  width:100%;
+  font-size:14px;
+  font-family: 'SUITE-Regular';
+  cursor:pointer;
+}
+.ask button, .ask input[type=submit]{
+  font-size:14px;
+  background-color:#C60D41;
+  color:#F9F9F9;
+  font-family: 'SUITE-Regular';
+  margin-left:10px;
+  cursor:pointer;
+  transition:0.35s;
+}
+.ask input[type=submit]{
+  font-size:18px;
+  float:right;
+  padding:10px;
+}
+.ask input[type=submit]:hover,.ask button:hover{
+  color:#C60D41;
+  background-color:#F9F9F9;
+}
+.ask p{
+  font-size:14px;
+  margin-bottom:15px;
+  opacity:0.8;
+}
+.ask h4{
+  font-size:20px;
+  letter-spacing:3px;
+  border-bottom:1px solid #F9F9F9;
+  padding-bottom:20px;
+  margin-bottom:20px;
+}
+.ask form{
+  text-align:left;
+  font-weight:400;
+}
+.ask span{display:block;}
+textarea{
+  height:18px;
+  padding:5px;
+  width:100%;
+}
+textarea[name=description]{height:150px;}

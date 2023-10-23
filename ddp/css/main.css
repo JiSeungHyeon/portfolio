@@ -1,0 +1,470 @@
+#tap_bar a{color:#fff;}
+#top a{color:#202020;}
+#top{background-color:#fff;}
+.back span{color:#D6D6D6}
+.trigger{background-color:#D6D6D6;}
+
+#wrap{
+  margin:auto;
+  padding-top:50px;
+}
+body{background-color:#202020;}
+
+/* visual =================== */
+.visual{
+  height:100vh;
+  position:relative;
+  color:#D6D6D6;
+  font-size:40px;
+  font-size:15vw;
+  margin:100px;
+  margin:1.875rem;
+  font-family: 'Abril Fatface', cursive;
+  overflow:hidden;
+}
+.visual span:nth-of-type(1){
+  position:relative;
+  z-index:1;
+  margin-right:2vw;
+}
+.visual_img1{
+  position:absolute;
+  right:0;
+  height:20vw;
+  width:30vw;
+  object-fit:cover;
+  border:1px solid #D6D6D6;
+  border-radius:2vw;
+}
+.visual span:nth-of-type(2){
+  display:block;
+  text-align:right;
+  position:relative;
+  z-index:3;
+}
+.visual span:nth-of-type(2):before{
+  width:100vw;
+  position:absolute;
+  content:'';
+  height:1px;
+  background-color:#D6D6D6;
+  right:60%;
+  top:55%;
+  z-index:2;
+}
+.visual span:nth-of-type(3){
+  position:absolute;
+  top:35vw;
+  left:0;
+  z-index:1;
+  background-color:#202020;
+  border-radius:0 0 20px 0;
+  display:inline-block;
+  padding:10px;
+}
+.visual_img2{
+  width:90vw;
+  position:absolute;
+  top:46vw;
+  left:0;
+  z-index:-1;
+}
+.visual_more{
+  position:absolute;
+  font-family: Pretendard, sans-serif;
+  bottom:48vw;
+  font-size:5vw;
+  right:0;
+}
+.visual_more span{
+  position:absolute;
+  right:0;
+  background-color:#FFD100;
+  color:#202020;
+  width:40vw;
+  padding:5vw;
+  display:inline-block;
+  border-radius:50vw 0 0 50vw;
+}
+.visual_more a{
+  position:absolute;
+  z-index:2;
+  background-color:#202020;
+  color:#D6D6D6;
+  right:2vw;
+  padding:2vw;
+  box-sizing:border-box;
+  height:20vw;
+  text-transform:capitalize;
+  top:8vw;
+  font-size:4vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:4vw 0 4vw 0;
+}
+
+/* section 1 =================== */
+body{background-color: #202020;}
+a{color: #202020;}
+
+.sc1{
+  width: 100%;
+  margin: 50px auto;
+}
+
+.box01 h3{
+  text-align: center;
+  font-size: 10vw;
+  color: #eee;
+  margin-bottom: 50px;
+  font-family: 'Cafe24ClassicType-Regular';
+}
+
+.sc2-box{
+  width: 60%;
+  box-sizing: border-box;
+  
+}
+
+.sc2-box a{
+  margin: 10% 5% 0;
+}
+
+.sc2-box img{
+  width: 100%;
+  position: relative;
+  box-shadow: 3vw 3vw 2px rgba(255, 255, 255, 0.05);
+  transform: translateX(-3vw);
+}
+
+
+/* 스크롤 애니메이션 */
+
+.scr{
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.left-scroll {
+  transform: translate(-100vw, 0);
+}
+
+.right-scroll {
+  transform: translate(100vw, 0);
+
+}
+
+.scr.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* ____________ */
+
+.box01{
+  width:100vw;
+  overflow:hidden;
+  position: relative;
+  height: 300vw;
+}
+.sc2-box01,
+.sc2-box02{position: absolute;}
+
+.b1{
+  top: 30vw;
+  left: 10vw;
+}
+.b2{
+  top: 100vw;
+  right: 10vw;
+}
+.b3{
+  top: 170vw;
+  left: 10vw;
+}
+.b4{
+  top: 240vw;
+  right: 10vw;
+}
+
+
+.sc2-box01 img{border-radius: 0 50% 0 0;}
+.sc2-box02 img{border-radius: 50% 0 0 0;}
+
+.p-title{
+  position: relative;
+  color: #202020;
+  font-weight: 700;
+  font-size: 5vw;
+  text-align: center;
+  bottom: 20%;
+  left: 0;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.sc2-box01 .p-title{background-color: #D6D6D6;}
+.sc2-box02 .p-title{background-color: #FFD100;}
+
+.kind{
+  position: absolute;
+  top: 0%;
+  right: -25%;
+  padding:  0 2vw;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 700;
+  display: inline-block;
+}
+.sc2-box02 .kind{background-color: #D6D6D6;}
+.sc2-box01 .kind{background-color: #FFD100;}
+
+/* box02______________________ */
+
+
+.box02{
+  width: 100%;
+  margin-top: 150px;
+}
+
+.box02 h3{
+  display: inline-block;
+  padding: 2%;
+  letter-spacing : 1vw;
+  color: #202020;
+  font-size: 12vw;
+  background-color: #FFD100;
+}
+.box02 h3 span{
+  font-weight: 900;
+}
+
+.box02 .img-box{
+  width: 100%;
+  line-height: 0;
+}
+
+.box02 .img-box div{
+  display: inline-block;
+  border: 2vw solid #D6D6D6;
+  box-sizing: border-box;
+}
+
+.img-box{
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr); /* 5개씩 정렬 */
+  margin: auto;
+}
+/* .img-box::before{
+  position: absolute;
+  content: '';
+  width: 100vw;
+  height: 100%;
+  top: 24vw;
+  left: 0;
+  background:url(../image/bg.png) no-repeat center bottom;
+  background-size:cover;
+  z-index: -1;
+} */
+
+.grid{
+  height: 20vh;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+
+.grid img{
+  height: 100%;
+}
+
+.img-box .grid:nth-child(1){
+  grid-area: span 1/span 2;
+  background:url(../image/sub-dp-05.jpg) no-repeat center bottom;
+  background-size:cover;
+}
+.img-box .grid:nth-child(2){
+  grid-area: span 1/span 3;
+  background:url(../image/sub-dp-04.jpg) no-repeat center bottom;
+  background-size:cover;
+}
+.img-box .grid:nth-child(3){
+  grid-area: span 2/span 2;
+  height: 40vh;
+  background:url(../image/sub-dp-09.jpg) no-repeat center bottom;
+  background-size:cover;
+
+}
+.img-box .grid:nth-child(4){
+  grid-area: span 1/span 2;
+  background:url(../image/sub-dp-03.jpg) no-repeat center bottom;
+  background-size:cover;
+}
+.img-box .grid:nth-child(5){
+  grid-area: span 1/span 2;
+  background:url(../image/sub-dp-01.jpg) no-repeat center bottom;
+  background-size:cover;}
+
+.img-box .grid:nth-child(6){
+  grid-area: span 1/span 3;
+  background:url(../image/sub-dp-06.jpg) no-repeat center bottom;
+  background-size:cover;}
+
+
+/* section 2 ================== */
+#wrap3{
+  overflow-x: hidden;
+  background-color: #202020;
+}
+#event{
+  height: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+#event h1{
+  color: #D6D6D6;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-family: 'Cafe24ClassicType-Regular';
+}
+.pattern{
+  position: absolute;
+  top: 0;
+  left: -5vw;
+  width: 100vw;
+  height: 100vh;
+}
+.pattern img{
+  width: 125%;
+}
+.circle{
+  position: relative;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 400px;
+  z-index: 100;
+}
+.more{
+  font-size: 1.5rem;
+  font-family: 'Abril Fatface', cursive;
+  padding: 10px 20px;
+  border: 1px solid #FFD100;
+  background-color:transparent;
+  position:relative;
+  transition:0.35s;
+  z-index:10;
+}
+.more a{color:#FFD100;}
+.more:hover{background-color: #FFD100;}
+.more:hover a{color:#202020;}
+.circle ul li:first-child img{
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  width: 100%;
+  max-width: 28%;
+  border-radius: 50%;
+}
+.circle ul li:nth-child(2) img{
+  position: absolute;
+  top: -5%;
+  left: 3%;
+  width: 100%;
+  max-width: 20%;
+  border-radius: 50%;
+}
+.circle ul li:nth-child(3) img{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 100%;
+  max-width: 28%;
+  border-radius: 50%;
+}
+.circle ul li:nth-child(4) img{
+  position: absolute;
+  top: 0%;
+  right: 30%;
+  width: 100%;
+  max-width: 35%;
+  border-radius: 50%;
+}
+.circle ul li:nth-child(5) img{
+  position: absolute;
+  bottom: 10%;
+  right: 28%;
+  width: 100%;
+  max-width: 50%;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px 2px #222;
+}
+/* 자주묻는 질문 */
+#faq{
+  width: 100%;
+  max-width: 90%;
+  margin: auto auto 50px auto;
+  line-height: 30px;
+}
+#faq h1{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Cafe24ClassicType-Regular';
+  color: #D6D6D6;
+}
+.accordion .title,
+.accordion .content {
+  background-color: #FEFAE0;
+  position: relative;
+  padding: 10px 60px;
+}
+.accordion .title {
+  cursor: pointer;
+  border-bottom: 1px dashed #000;
+}
+.accordion .title:before {
+  content:'';
+  position: absolute;
+  top: 0.5vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/ques.svg)no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.accordion .title:after {
+  content:'\e5cf';
+  font-family: 'Material Icons Outlined';
+  position: absolute;
+  top: 0;
+  right: 5vw;
+  margin-top: 5px;
+  transition: 0.35s;
+}
+.accordion .content:before {
+  content:'';
+  position: absolute;
+  top: 3vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/answer.svg)no-repeat;
+  width: 100%;
+  height:100%;
+}
+.accordion .title.active:after {content: '\e5ce';}
+.accordion .title.active {background-color: #FEFAE0;}
+.accordion .content {
+  display: none;
+  margin-bottom: 7px;
+}
+.accordion .content.active{display: block;}

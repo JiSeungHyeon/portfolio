@@ -1,0 +1,128 @@
+/* header=============== */
+#tap_bar a img{filter:invert(100%);}
+#top a{color:#E62F8B;}
+nav{background-color:rgba(36,255,152,1);}
+.trigger{background-color:#E62F8B;}
+.trigger img{filter:invert(100%);}
+.vote{background-color:rgba(230, 47, 139,0.9);}
+.vote a{color:#fff;}
+.back span{color:#E62F8B;}
+
+body{
+  position:relative;
+  background-color: transparent;
+  overflow-x:hidden;
+}
+body:before{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100vh;
+  top:0;
+  left:0;
+  background:linear-gradient(rgba(36,255,152,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* section====================== */
+section{
+  padding-top:20vw;
+  width:100vw;
+  text-align:center;
+  overflow-x:hidden;
+}
+.seoul_design img{
+  width:80%;
+  margin:auto;
+  transform:rotate(-15deg);
+  margin:5vw;
+}
+
+@font-face {
+  font-family: 'Giants-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+section span{
+  position:relative;
+  transform:rotate(-15deg);
+  background:#E62F8B;
+  color:#fff;
+  display:block;
+  font-size:10vw;
+  font-family: 'Giants-Bold';
+  letter-spacing:1vw;
+}
+section span:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-50%;
+  background:#E62F8B;
+  width:200vw;
+  height:100%;
+  z-index:-1;
+}
+dl{
+  display:block;
+  position:relative;
+  margin-top:20vw;
+  color:#060001;
+  font-weight:600;
+  text-align:center;
+  font-size:4vw;
+  background-color:#fff;
+  padding:2vw;
+}
+dt{
+  display:inline-block;
+  position:absolute;
+  transform:rotate(-15deg);
+  top:-50%;
+  left:3%;
+  background-color:#FEF103;
+  width:25vw;
+  padding:1vw;
+  font-weight:700;
+  font-size:5vw;
+}
+dd{
+  display:inline-block;
+  font-size:4.5vw;
+}
+.seoul_design_info{
+  margin:10vh 0;
+}
+.seoul_design_info img{
+  width:100vw;
+}
+table{
+  border-collapse:collapse;
+  text-align: center;
+  color:#E62F8B;
+  margin:15vw auto;
+  font-size:3vw; 
+}
+tr{
+  border:1px solid #E62F8B;
+  background-color:rgba(230, 47, 139,0.2);
+}
+tr:first-child{font-weight:700;}
+tr td{padding:2vw;}
+tr>td{border-right:1px solid #E62F8B;}
+.table_left{font-weight:700;}
+
+/* footer============== */
+footer{color:#E62F8B;}
+footer ul li{
+  border-top:1px solid #E62F8B;
+  border-bottom:1px solid #E62F8B;
+}
+footer ul li:nth-child(2){
+  border-left:1px solid #E62F8B;
+  background-color:rgba(230, 47, 139,0.2);
+}
+address p:first-child{color:#E62F8B;}
+address p:nth-child(2){color:#E62F8B;}
+address p:nth-child(3){color:#E62F8B;}

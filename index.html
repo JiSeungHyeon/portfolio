@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="image/thumb.jpg">
+  <meta property="og:site_name" content="지승현 - Portfolio">
+  <meta property="og:description" content="지승현의 포트폴리오입니다.">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="icon" href="image/favicon.png">
+  <link rel="stylesheet" href="css/index.css">
+  <title>지승현 - Portfolio</title>
+</head>
+<body>
+  <!-- <div class="preloader">
+    <h1>Welcome to my portfolio</h1>
+    <h2 class="counter">0</h2>
+  </div> -->
+
+  <div id="wrap">
+    <div id="top"><a href="#"><ion-icon name="chevron-up-circle-sharp"></ion-icon></a></div>
+    <div class="hero">
+      <header>
+        <div class="clock">
+          <div class="date"></div>
+          <div class="time"></div>
+        </div>
+  
+        <div class="weather">
+          <div class="noti">
+            위치 정보를 가져올 수 없습니다. 위치 설정을 확인해주세요.
+          </div>
+          <div class="weather-container">
+            <img class="icon" alt="" src="https://openweathermap.org/img/wn/04d@2x.png">
+            <div class="city"></div>
+          </div>
+        </div>
+  
+        <ul class="gnb">
+          <li><a href="#publish" class="hover-gnb">Web Publishing </a></li>
+          <li><a href="#uiux" class="hover-gnb"> UI/UX Design </a></li>
+          <li><a href="#graphic" class="hover-gnb"> Graphic Design </a></li>
+          <li><a href="#plan" class="hover-gnb"> Web Planning </a></li>
+        </ul>
+      </header>
+  
+      <div class="visual">
+        <div class="visual-left">
+          <div class="rotating-text">
+            <p>I'm</p>
+            <p>
+              <span class="word w-1">creative.</span>
+              <span class="word w-2">passionate.</span>
+              <span class="word w-3">a&nbsp;fast-learner.</span>
+            </p>
+          </div>
+          <div class="profile">
+            <div class="pic">
+              <img src="image/profile.JPG" alt="">
+            </div>
+            <div class="info">
+              <ul class="self">
+                <li>지승현 <i>Ji Seunghyeon</i></li>
+                <li>1996. 07. 29</li>
+                <li><a href="tel:01094338288">01094338288</a></li>
+                <li><a href="mailto:shjuly29@daum.net" target="_blank">shjuly29@daum.net</a></li>
+                <li><hr></li>
+                <li>Education</li>
+                <li>2015.03 ~ 2021.02 중앙대학교 간호학과</li>
+                <li>2023.06 ~ 2023.10 모바일 웹 & 앱디자인(html,css,javascript,vue.js) (758H)</li>
+                <li>Career</li>
+                <li>2021.05 ~ 2022.11 연세의료원 간호직</li>
+                <li>Hobbies</li>
+                <li><ion-icon name="camera-sharp"></ion-icon>&amp;<ion-icon name="musical-notes-sharp"></ion-icon></li>
+              </ul>
+            </div>
+          </div>
+          <div class="music">
+            <div class="track-info">
+              <div class="track-name">Track Name</div>
+              <div class="track-artist">Track Artist</div>
+            </div>
+            <div class="track-nav">
+              <div class="prev-track">
+                <ion-icon name="play-back-sharp"></ion-icon>
+              </div>
+              <div class="playpause-track">
+                <ion-icon name="play-sharp"></ion-icon>
+              </div>
+              <div class="next-track">
+                <ion-icon name="play-forward-sharp"></ion-icon>
+              </div>
+              <div class="progress-container">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="visual-right">
+          <ul class="number">
+            <li><a href="#publish"><ion-icon name="sparkles-outline"></ion-icon></a></li>
+            <li><a href="#publish">Web Publishing</a></li>
+            <li class="num"><a href="#publish">7</a></li>
+            <li><a href="#uiux"><ion-icon name="sparkles-outline"></ion-icon></a></li>
+            <li><a href="#uiux">UI/UX Design</a></li>
+            <li class="num"><a href="#uiux">12</a></li>
+            <li><a href="#graphic"><ion-icon name="sparkles-outline"></ion-icon></a></li>
+            <li><a href="#graphic">Graphic Design</a></li>
+            <li class="num"><a href="#graphic">7</a></li>
+            <li><a href="#plan"><ion-icon name="sparkles-outline"></ion-icon></a></li>
+            <li><a href="#plan">Web Planning</a></li>
+            <li class="num"><a href="#plan">3</a></li>
+          </ul>
+
+          <div class="mouse-box">
+            <div class="mouse">
+              <span></span>
+            </div>
+            <div class="arrows-down">
+              <span class="material-symbols-outlined arrow1">expand_more</span>
+              <span class="material-symbols-outlined arrow2">expand_more</span>
+              <span class="material-symbols-outlined arrow3">expand_more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="gnb">
+      <ul class="gnb-fix">
+        <li data-text="Skills"><a href="#skills"><ion-icon name="build-outline"></ion-icon></a></li>
+        <li data-text="Web publishing"><a href="#publish"><ion-icon name="code-slash-outline"></ion-icon></a></li>
+        <li data-text="UI/UX Design"><a href="#uiux"><ion-icon name="desktop-outline"></ion-icon></a></li>
+        <li data-text="Graphic Design"><a href="#graphic"><ion-icon name="color-palette-outline"></ion-icon></a></li>
+        <li data-text="Web Planning"><a href="#plan"><ion-icon name="easel-outline"></ion-icon></a></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <div class="skill">
+        <h2>skills</h2>
+        <div class="text">           Office HTML CSS jQuery Javascript Github React.js Vue.js Anime.js Bootstrap SASS SVG Photoshop Illustrator Figma</div>
+        <div class="space"></div>
+      </div>
+    </section>
+
+    <section id="publish">
+      <h2>web publishing</h2>
+      <div class="marker-wrapper">
+        <div class="marker">
+          <div class="grab"></div>
+        </div>
+        <div class="active-slide">1/7</div>
+      </div>
+      <div class="slider">
+        <div class="slider-wrapper">
+          <div class="slide">
+            <h4>01 에이블톤 원페이지</h4>
+            <div class="slide_contents">
+              <div class="slide-img">
+                <img src="image/site1_t.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                <i>웹표준 준수<em>✔</em></i>
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 원페이지</p>
+                <p><b>제작기간</b> 3 days</p>
+                <p><b>제작환경</b> HTML5, CSS3</p>
+                <div class="p-btn">
+                  <a href="https://ableton-onepage.netlify.app" target="_blank" data-text="Site"></a>
+                </div>
+                <div class="p-btn git">
+                  <a href="https://github.com/JiSeungHyeon/onepage" target="_blank" data-text="Github"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h4>02 포카리스웨트 원페이지</h4>
+            <div class="slide_contents">
+              <div class="slide-img">
+                <img src="image/site2_t.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                <i>웹표준 준수<em>✔</em></i>
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 원페이지</p>
+                <p><b>제작기간</b> 4 days</p>
+                <p><b>제작환경</b> HTML5, CSS3</p>
+                <div class="p-btn">
+                  <a href="https://jiseunghyeon.github.io/pokari/" target="_blank" data-text="Site"></a>
+                </div>
+                <div class="p-btn git">
+                  <a href="https://github.com/JiSeungHyeon/pokari" target="_blank" data-text="Github"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h4>03 LG생활건강 전체 페이지</h4>
+            <div class="slide_contents">
+              <div class="slide-img">
+                <img src="image/site3_t.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                <i>웹표준 준수<em>✔</em></i>
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 전체 페이지<br>(메인 1 + 서브 8 = 총 9page)</p>
+                <p><b>제작기간</b> 7 days</p>
+                <p><b>제작환경</b> HTML5, CSS3, jQuery</p>
+                <div class="p-btn">
+                  <a href="http://shjuly29.pe.kr/lg/index.html" target="_blank" data-text="Site"></a>
+                </div>
+                <div class="p-btn git">
+                  <a href="https://github.com/JiSeungHyeon/lg" target="_blank" data-text="Github"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h4>04 카밀 전체 페이지</h4>
+            <div class="slide_contents">
+              <div class="slide-img">
+                <img src="image/site4_t.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                <i>웹표준 준수<em>✔</em></i>
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 전체 페이지<br>(메인 1 + 서브 5 = 총 6page)</p>
+                <p><b>제작기간</b> 4 days</p>
+                <p><b>제작환경</b> HTML5, CSS3, jQuery</p>
+                  <div class="p-btn">
+                    <a href="http://shjuly29.pe.kr/kamill/index.html" target="_blank" data-text="Site"></a>
+                  </div>
+                  <div class="p-btn git">
+                    <a href="https://github.com/JiSeungHyeon/Kamill" target="_blank" data-text="Github"></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h4>05 대한체육회 메인</h4>
+            <div class="slide_contents">
+              <div class="slide-img">
+                <img src="image/site5_t.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                <i>웹표준 준수<em>✔</em></i>
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 메인 페이지</p>
+                <p><b>제작기간</b> 3 days</p>
+                <p><b>제작환경</b> HTML5, CSS3, jQuery</p>
+                <div class="p-btn">
+                  <a href="https://jiseunghyeon.github.io/sports/" target="_blank" data-text="Site"></a>
+                </div>
+                  <div class="p-btn git">
+                    <a href="https://github.com/JiSeungHyeon/sports" target="_blank" data-text="Github"></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h4>06 웹트렌드 반응형 메인</h4>
+            <div class="slide_contents">
+              <div class="slide-img">
+                <img src="image/site6_t.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                <i>웹표준 준수<em>✔</em></i>
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 반응형 페이지</p>
+                <p><b>제작기간</b> 3 days</p>
+                <p><b>제작환경</b> HTML5, CSS3, jQuery</p>
+                <div class="respon-btn">
+                  <div class="p-btn">
+                    <a href="https://jiseunghyeon.github.io/webtrend/" target="_blank" data-text="PC">PC</a>
+                  </div>
+                  <div class="p-btn">
+                    <a href="#none" onclick="MM_openBrWindow('https://jiseunghyeon.github.io/webtrend/','name','scrollbars=no,width=780px,height=940px,top=0,left=0')" data-text="Tablet">Tablet</a>
+                  </div>
+                  <div class="p-btn">
+                    <a href="#none" onclick="MM_openBrWindow('https://jiseunghyeon.github.io/webtrend/','창 이름','scrollbars=no,width=380px,height=720px,top=0px,left=0px')" data-text="Mobile">Mobile</a>
+                  </div>
+                  <br>
+                  <div class="p-btn git">
+                    <a href="https://github.com/JiSeungHyeon/webtrend" target="_blank" data-text="Github">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h4>07 DDP 모바일 전체 페이지</h4>
+            <div class="slide_contents">
+              <div class="slide-img">
+                <img src="image/site7_t.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                <i>웹표준 준수<em>✔</em></i>
+                <span class="contribution">팀 작업</span>
+                <p><b>제작범위</b> 모바일 전체 페이지<br>(메인 1 + 서브 10 = 총 11page)</p>
+                <p><b>제작기간</b> 14 days</p>
+                <p><b>제작환경</b> HTML5, CSS3, jQuery, <br>Javascript, Figma, Github</p>
+                <div class="p-btn">
+                  <a href="#none" onclick="MM_openBrWindow('http://shjuly29.pe.kr/ddp/index.html','name','scrollbars=no,width=360px,height=700px,top=0,left=0')" data-text="Site"></a>
+                </div>
+                <div class="p-btn git">
+                  <a href="https://github.com/JiSeungHyeon/DDP" target="_blank" data-text="Github"></a>
+                </div>
+                <div class="mobile-btn">
+                  <h5>My Contribution</h5>
+                  <ul class="mo-list">
+                    <li data-text="1" onclick="MM_openBrWindow('http://shjuly29.pe.kr/ddp/index.html','name','scrollbars=no,width=360px,height=700px,top=0,left=0')">
+                    </li>
+                    <li data-text="2" onclick="MM_openBrWindow('http://shjuly29.pe.kr/ddp/sub_02.html','name','scrollbars=no,width=360px,height=700px,top=0,left=0')">
+                    </li>
+                    <li data-text="3" onclick="MM_openBrWindow('http://shjuly29.pe.kr/ddp/sub_06.html','name','scrollbars=no,width=360px,height=700px,top=0,left=0')">
+                    </li>
+                    <li data-text="4" onclick="MM_openBrWindow('http://shjuly29.pe.kr/ddp/sub_10.html','name','scrollbars=no,width=360px,height=700px,top=0,left=0')">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="mo-modal">
+      <div class="mo-nav">
+        <div class="next"><ion-icon name="arrow-forward-sharp"></ion-icon></div>
+        <div class="prev"><ion-icon name="arrow-back-sharp"></ion-icon></div>
+        <div class="close"><ion-icon name="close-sharp"></ion-icon></div>
+      </div>
+      <ul class="mo-modal-list">
+        <li>
+          
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+      </ul>
+    </div> -->
+
+    <section id="uiux">
+      <h2>UI/UX Design</h2>
+      <h3>Scroll the image</h3>
+      <div class="uiux-in">
+        <div class="uiux_overlay">
+          <ul class="img-container">
+            <li class="active"><img src="image/uiux1.png" alt=""></li>
+            <li><img src="image/uiux2.jpg" alt=""></li>
+            <li><img src="image/uiux3.jpg" alt=""></li>
+            <li><img src="image/uiux4.png" alt=""></li>
+            <li><img src="image/uiux5.jpg" alt=""></li>
+            <li><img src="image/uiux6.jpg" alt=""></li>
+            <li><img src="image/uiux7.jpg" alt=""></li>
+            <li><img src="image/uiux8.jpg" alt=""></li>
+            <li><img src="image/uiux9.jpg" alt=""></li>
+            <li><img src="image/uiux10.png" alt=""></li>
+            <li><img src="image/uiux11.jpg" alt=""></li>
+            <li><img src="image/uiux12.jpg" alt=""></li>
+          </ul>
+        </div>
+        <div class="uiux-container">
+          <ul class="uiux-items">
+            <li class="active">01 레드버튼 모바일</li>
+            <li>02 롱섀도우 메인</li>
+            <li>03 피어나클리닉 메인 및 서브</li>
+            <li>04 PLAY SLR 모바일</li>
+            <li>05 붓터치 메인 및 서브</li>
+            <li>06 헤드셋 메인</li>
+            <li>07 경기문화재단 메인 및 서브</li>
+            <li>08 서울우유 메인</li>
+            <li>09 세븐클루스 반응형 메인</li>
+            <li>10 그랑블루 모바일</li>
+            <li>11 뮤즈댄스스튜디오 메인 및 서브</li>
+            <li>12 그리드 메인</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphic">
+      <div class="graphic-in">
+        <h2>graphic design</h2>
+        <h3>Click the image</h3>
+        <div class="graphic-container">
+          <div class="indicator"></div>
+          <ul class="gallery">
+            <li><img src="image/graphic1.jpg" alt=""></li>
+            <li><img src="image/graphic2.jpg" alt=""></li>
+            <li><img src="image/graphic3.jpg" alt=""></li>
+            <li><img src="image/graphic4.jpg" alt=""></li>
+            <li><img src="image/graphic5.jpg" alt=""></li>
+            <li><img src="image/graphic6.jpg" alt=""></li>
+            <li><img src="image/graphic7.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="graphic-popup">
+        <div class="graphic-popup-in">
+          <ul class="popup">
+            <li><img src="image/graphic1_m.jpg" alt=""></li>
+            <li><img src="image/graphic2_m.jpg" alt=""></li>
+            <li><img src="image/graphic3_m.jpg" alt=""></li>
+            <li><img src="image/graphic4_m.jpg" alt=""></li>
+            <li><img src="image/graphic5_m.jpg" alt=""></li>
+            <li><img src="image/graphic6_m.jpg" alt=""></li>
+            <li><img src="image/graphic7_m.jpg" alt=""></li>
+          </ul>
+        </div>
+        <ul class="g_btn">
+          <li class="btn_close"><ion-icon name="close-circle-outline"></ion-icon></li>
+          <li class="left_btn"><ion-icon name="arrow-back-circle-outline"></ion-icon></li>
+          <li class="right_btn"><ion-icon name="arrow-forward-circle-outline"></ion-icon></li>
+          <li class="g_page"><span>1</span> / <span>7</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="plan">
+      <div class="plan-in">
+        <h2>Web planning</h2>
+        <h3>Hover the image</h3>
+        <div class="plan">
+          <ul class="web-plan">
+            <li>
+              <h4>LG 생활건강 전체 페이지 리뉴얼</h4>
+              <div class="web-plan-content">
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 전체 페이지<br>(메인 1 + 서브 8 = 총 9page)</p>
+                <p><b>제작기간</b> 7 days</p>
+                <p><b>제작환경</b> HTML5, CSS3, jQuery</p>
+                <a href="http://shjuly29.pe.kr/lg/index.html" target="_blank" data-text="result">result</a>
+                <ul class="plan-btn">
+                  <li>스토리보드</li>
+                  <li>프로젝트 완료 보고서</li>
+                  <li>산출물목록표</li>
+                  <li>모니터링 체크리스트</li>
+                  <li>수정완료보고서</li>
+                </ul>
+                <div class="plan-contents">
+                  <ul class="plan-content">
+                    <li><iframe src="docs/lg_board.pdf"></iframe></li>
+                    <li><iframe src="docs/lg_complete.pdf"></iframe></li>
+                    <li><iframe src="docs/lg_output.pdf"></iframe></li>
+                    <li><iframe src="docs/lg_check.pdf"></iframe></li>
+                    <li><iframe src="docs/lg_modify.pdf"></iframe></li>
+                  </ul>
+                  <ul class="plan-nav">
+                    <li class="p-next"><ion-icon name="arrow-forward-sharp"></ion-icon></li>
+                    <li class="p-prev"><ion-icon name="arrow-back-sharp"></ion-icon></li>
+                    <li class="p-close"><ion-icon name="close-sharp"></ion-icon></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>오프오프 회원가입 페이지</h4>
+              <div class="web-plan-content">
+                <span class="contribution">100% 개인 작업 (기획, 디자인, 코딩)</span>
+                <p><b>제작범위</b> 회원가입 페이지</p>
+                <p><b>제작기간</b> 1 day</p>
+                <p><b>제작환경</b> HTML5, CSS3</p>
+                <a href="https://jiseunghyeon.github.io/offoff/" target="_blank" data-text="result">result</a>
+                <ul class="plan2-btn">
+                  <li>무드보드</li>
+                </ul>
+                <div class="plan2-contents">
+                  <ul class="plan2-content">
+                    <li><iframe src="docs/offoff_mood.pdf"></iframe></li>
+                  </ul>
+                  <ul class="plan2-nav">
+                    <li class="p2-close"><ion-icon name="close-sharp"></ion-icon></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>세븐클루스 반응형 메인 시안</h4>
+              <div class="web-plan-content">
+                <span class="contribution">100% 개인 작업 (기획, 디자인)</span>
+                <p><b>제작범위</b> 메인페이지</p>
+                <p><b>제작기간</b> 1 day</p>
+                <p><b>제작환경</b> Photoshop, Illustrator</p>
+                <a href="#none" data-text="result" class="plan3-modal">result</a>
+                <ul class="plan3-btn">
+                  <li>와이어프레임 보고서</li>
+                  <li>와이어프레임</li>
+                  <li>메타포아이콘 보고서</li>
+                  <li>메타포아이콘</li>
+                  <li>스타일가이드</li>
+                </ul>
+                <div class="plan3-contents">
+                  <ul class="plan3-content">
+                    <li><iframe src="docs/seven_wfreport.pdf"></iframe></li>
+                    <li><img src="image/seven_wf.jpg" alt=""></li>
+                    <li><img src="image/seven_iconreport.jpg" alt=""></li>
+                    <li><img src="image/seven_icon.jpg" alt=""></li>
+                    <li><img src="image/seven_guide.jpg" alt=""></li>
+                  </ul>
+                  <ul class="plan3-nav">
+                    <li class="p3-next"><ion-icon name="arrow-forward-sharp"></ion-icon></li>
+                    <li class="p3-prev"><ion-icon name="arrow-back-sharp"></ion-icon></li>
+                    <li class="p3-close"><ion-icon name="close-sharp"></ion-icon></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="plan3">
+        <div class="plan3-in">
+          <img src="image/seven.jpg" alt="">
+          <ion-icon name="close-sharp" class="plan3-close"></ion-icon>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-in">
+      <h4>위 포트폴리오는 무료 이미지와 무료 음원을 사용한 비상업적 개인 작업물입니다.</h4>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+  <script type="module" src="js/weather.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

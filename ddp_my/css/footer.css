@@ -1,0 +1,46 @@
+footer{padding:7vh 0;}
+footer ul{
+  display: flex;
+  text-align: center;
+}
+footer ul li:first-child{
+  background-color: #fff;
+  flex: 1;
+  padding: 1vh;
+  font-size: 1.1rem;
+}
+footer ul li:nth-child(2){
+  background-color: #E4E7EA;
+  flex: 1;
+  padding: 1vh;
+  font-size: 1.1rem;
+}
+footer ul li span{
+  display: block;
+  font-size: 0.5rem;
+  color: #989898;
+}
+address{
+  margin-top:5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  text-align: center;
+  font-style: normal;
+  font-size: 0.8rem;
+  height: 15vh;
+}
+address p:first-child{
+  color: #fff;
+  font-weight: 500;
+}
+address p:nth-child(2){
+  color: #D4C6C6;
+  font-weight: 300;
+}
+address p:nth-child(3){
+  color: #D5BCBC;
+  font-weight: 300;
+}

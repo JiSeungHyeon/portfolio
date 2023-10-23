@@ -1,0 +1,238 @@
+*{overflow:hidden;}
+#wrap{position:relative;}
+
+/* logo animation====================================== */
+@keyframes logo{
+  from{opacity:1;}
+  to{opacity:0;}
+}
+#visual_logo{
+  width:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:10;
+  animation:logo 0.5s;
+  animation-fill-mode:forwards;
+  animation-delay:2.8s;
+}
+.cls-1 {
+  fill: #5c98d1;
+  stroke-width:0px;
+}
+.cls-2 {
+  fill: none;
+  stroke: #5c98d1;
+  stroke-miterlimit:10;
+  stroke-width:4px;
+}
+@keyframes round{
+  from{opacity:0;}
+  to{opacity:1}
+}
+.round1{
+  opacity:0;
+  animation:round 0.3s;
+  animation-fill-mode:forwards;
+  animation-delay:0.5s;
+}
+.round2{
+  opacity:0;
+  animation:round 0.3s;
+  animation-delay:1.5s;
+  animation-fill-mode:forwards;
+}
+@keyframes line1{
+  from{
+    opacity:0;
+    stroke-dashoffset:313;
+  }
+  to{
+    opacity:1;
+    stroke-dashoffset:0;
+  }
+}
+.line1{
+  opacity:0;
+  stroke-dasharray:313;
+  stroke-dashoffset:0;
+  animation:line1 0.7s;
+  animation-fill-mode:forwards;
+  animation-delay:0.3s;
+}
+@keyframes line2{
+  from{
+    opacity:0;
+    stroke-dashoffset:310;
+  }
+  to{
+    opacity:1;
+    stroke-dashoffset:0;
+  }
+}
+.line2{
+  opacity:0;
+  stroke-dasharray:310;
+  stroke-dashoffset:0;
+  animation:line2 0.3s;
+  animation-fill-mode:forwards;
+  animation-delay:1s;
+}
+@keyframes line3{
+  from{
+    opacity:0;
+    stroke-dashoffset:272;
+  }
+  to{
+    opacity:1;
+    stroke-dashoffset:0;
+  }
+}
+.line3{
+  opacity:0;
+  stroke-dasharray:272;
+  stroke-dashoffset:0;
+  animation:line3 0.3s;
+  animation-fill-mode:forwards;
+  animation-delay:1.3s;
+}
+@keyframes ddp{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+.ddp{
+  opacity:0;
+  animation:round 0.3s;
+  animation-delay:2s;
+  animation-fill-mode:forwards;
+}
+
+/* gif reveal================================= */
+.pre_loader{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:10;
+  background-color:transparent;
+}
+.loader_wrapper{
+  position:relative;
+  width:2px;
+  height:100vh;
+  background-color:transparent;
+  border-radius:2px;
+  overflow:hidden;
+}
+@keyframes loader{
+  from{top:100%;}
+  to{
+    top:0;
+    opacity:0;
+  }
+}
+.loader{
+  position:absolute;
+  top:100%;
+  width:100vw;
+  height:100vh;
+  background:#333;
+  animation:loader 0.35s;
+  animation-delay:2.5s;
+  animation-fill-mode:forwards;
+}
+@keyframes clipper_left{
+  from{clip-path:inset(0 0 0 0);}
+  to{clip-path:inset(0 100% 0 0);}
+}
+.clipper_left{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100vh;
+  width:51vw;
+  background:#fff;
+  overflow:clip;
+  clip-path:inset(0 0 0 0);
+  display:flex;
+  justify-content:flex-end;
+  animation:clipper_left 1.5s;
+  animation-delay:3s;
+  animation-fill-mode:forwards;
+}
+@keyframes clipper_right{
+  from{clip-path:inset(0 0 0 0);}
+  to{clip-path:inset(0 0 0 100%);}
+}
+.clipper_right{
+  position:absolute;
+  top:0;
+  right:0;
+  height:100vh;
+  width:51vw;
+  background:#fff;
+  overflow:clip;
+  clip-path:inset(0 0 0 0);
+  display:flex;
+  justify-content:flex-start;
+  animation:clipper_right 1.5s;
+  animation-delay:3s;
+  animation-fill-mode:forwards;
+}
+#gif_container a img{width:100vw;height:100vh}
+
+/* text reveal================= */
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.75em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.visual_desc{
+  width:100%;
+  padding:30px;
+  position:absolute;
+  opacity:0;
+  top:5%;
+  left:50%;
+  transform:translateX(-50%);
+  animation-name:tracking-in-expand;
+  animation-duration:1.3s;
+  animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  animation-fill-mode:forwards;
+  animation-delay:5s;
+  color:#6b3c28;
+  font-weight:700;
+  font-size:4vw;
+  text-align:center;
+}
+.visual_touch p{
+  width:100%;
+  padding:30px;
+  position:absolute;
+  opacity:0;
+  bottom:10%;
+  left:50%;
+  transform:translateX(-50%);
+  animation-name:tracking-in-expand;
+  animation-duration:1.3s;
+  animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  animation-fill-mode:forwards;
+  animation-delay:6s;
+  font-weight:900;
+  font-size:5vw;
+  text-align:center;
+  background-color:rgba(255,255,255,0.7);
+  text-transform:uppercase;
+}
+.visual_touch a{
+  color:#6b3c28;
+  display:block;
+}

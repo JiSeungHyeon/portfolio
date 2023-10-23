@@ -1,0 +1,119 @@
+#wrap{
+  margin:auto;
+  padding-top:50px;
+}
+body{background-color:#202020;}
+
+/* event=================== */
+section{
+  width:100vw;
+  height:85vh;
+  position:relative;
+  overflow-x:hidden;
+}
+.event_bg img{
+  position:absolute;
+  opacity:0.7;
+}
+.event_bg img:nth-child(1){
+  top:-15vw;
+  left:-60vw;
+  transform:scale(0.3);
+}
+.event_bg img:nth-child(2){
+  top:15vw;
+  right:-50vw;
+  transform:scaleX(-1) scale(0.4);
+}
+.event_bg img:nth-child(3){
+  bottom:20vw;
+  left:0;
+}
+.event_bg img:nth-child(4){
+  bottom:40vw;
+  right:0;
+}
+section h1{
+  display:inline-block;
+  position:relative;
+  top:15vh;
+  color:#D6D6D6;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:8vw;
+  border-bottom:13px solid #FFEE32;
+}
+.event{
+  position:relative;
+  top:40vw;
+  width:inherit;
+  height:40vh;
+  display:flex;
+  flex-wrap:nowrap;
+  user-select:none;
+}
+.event figure{
+  position:relative;
+  left:0px;
+  margin:0 3vw;
+  width:94vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-shrink:0;
+  transition:0.5s;
+}
+.event figure:before{
+  position:absolute;
+  width:90%;
+  top:100%;
+  color:#D6D6D6;
+  text-shadow:0 0 3px #202020;
+  font-weight:500;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  font-size:6vw;
+}
+.event figure img{width:100vw;}
+figure:nth-of-type(2):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+}
+figure:nth-of-type(3):before{
+  content:'온라인몰 가입하고 리뷰 작성하자!';
+}
+figure:nth-of-type(4):before{
+  content:'DDP에서 준비하는 새학기, 새집 단장 프로젝트';
+}
+figure:nth-of-type(5):before{
+  content:'2020 서울라이트 희망메시지 시민 공모';
+}
+figure:nth-of-type(6):before{
+  content:'2020 DDP라이트ON 시민참여공모이벤트';
+}
+figure:nth-of-type(7):before{
+  content:'DDP 복날 이벤트';
+}
+figure:nth-of-type(8):before{
+  content:'8월호 DDP 월간소식지 이벤트 당첨내역';
+}
+figure:nth-of-type(9):before{
+  content:'DDP 장미정원 현장이벤트!';
+}
+.slide_pagination {
+  display:flex;
+  width:50vw;
+  gap:3vw;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+.slide_pagination > li {
+  color:rgba(255,255,255,0.3);
+  cursor: pointer;
+  font-size:10vw;
+}
+.slide_pagination > li.active {
+  color: #fff;
+}

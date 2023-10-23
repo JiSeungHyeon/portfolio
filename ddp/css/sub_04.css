@@ -1,0 +1,286 @@
+html{scroll-behavior:smooth;}
+nav{background-color:#007AEB;}
+.vote{
+  background-color:#fff;
+  border:1px solid #007AEB;
+}
+nav li{
+  list-style-type: none;
+  color: #fff;
+}
+*, *:after, *:before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: Pretendard, sans-serif;
+  font-weight:700;
+  overflow:hidden;
+  width:100%;
+  -webkit-text-size-adjust:none;
+}
+
+nav li a{color: #fff;}
+#wrap{
+  position:relative;
+  width:100%;
+  height: 100vh;
+  background-color: #007AEB;
+  overflow-x: hidden;
+}
+.trigger{background-color:#fff;}
+.back span{color:#fff;}
+.poster img{
+  margin-top: 3rem;
+  width: 100vw;
+  height: 35vh;
+}
+.ftitle{
+  margin-bottom: 10%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.ftitle:before{
+  content: '';
+  position: absolute;
+  top: 1vh;
+  left: 15vw;
+  width: 70vw;
+  height: 3vh;
+  background-color: #004788;
+  z-index: -1;
+}
+.content{
+  margin: 7vh 0;
+  font-size: 4vw;
+  line-height: 5vw;
+}
+@keyframes ani04 {
+  0%{transform: translateX(-100vw);}
+  100%{transform: translateX(0vw);}
+}
+@keyframes ani05 {
+  0%{transform: translateX(150vw);}
+  100%{transform: translateX(0vw);}
+}
+.one{
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+  padding: 0.3rem;
+  z-index: 10;
+  animation: ani04 0.5s linear;
+}
+.one::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 30vh;
+  background: url(../image/Rectangle\ 63.svg)no-repeat;
+  z-index: -1;
+}
+.two{
+  width: 100vw;
+  height: 7vh;
+  position: relative;
+  top: 0vh;
+  left: -5vw;
+  z-index: 10;
+  text-align: right;
+  animation: ani05 0.6s linear;
+}
+.two::before{
+  content: '';
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left: 25vw;
+  width: 90vw;
+  height: 10vh;
+  background: url(../image/Rectangle\ 64.svg)no-repeat;
+  z-index: -1;
+}
+.three{
+  width: 100vw;
+  height: 2vh;
+  position: relative;
+  z-index: 10;
+  padding: 2vw;
+  box-sizing: border-box;
+  animation: ani04 0.7s linear;
+}
+.three::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 20vh;
+  background: url(../image/Rectangle\ 65.svg)no-repeat;
+  z-index: -1;
+}
+.four{
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1vh;
+  text-align: right;
+  animation: ani05 0.8s linear;
+}
+.four::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 42vw;
+  width: 100vw;
+  height: 10vh;
+  background: url(../image/Rectangle\ 66.svg)no-repeat;
+  z-index: -1;
+}
+.four::after{
+  content: '';
+  position: absolute;
+  top: -5vh;
+  left: 90vw;
+  width: 100vw;
+  height: 10vh;
+  background: url(../image/Ellipse\ 14.svg)no-repeat;
+  z-index: -1;
+}
+.five{
+  width: 100vw;
+  height: 3vh;
+  position: relative;
+  z-index: 10;
+  padding: 0.3rem;
+  line-height: 1.5rem;
+  animation: ani04 0.9s linear;
+}
+.five::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 8vh;
+  background: url(../image/Rectangle\ 67.svg)no-repeat;
+  z-index: -1;
+}
+.five::after{
+  content: '';
+  position: absolute;
+  top: 10vh;
+  left: 0vh;
+  width: 15vw;
+  height: 15vh;
+  background: url(../image/Polygon\ 2.svg)no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.six{
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+  z-index: 10;
+  text-align: right;
+  padding: 0.8rem;
+  animation: ani05 1s linear;
+}
+.six::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40vw;
+  width: inherit;
+  height: 8vh;
+  background: url(../image/Rectangle\ 68.svg)no-repeat;
+  z-index: -1;
+}
+.seven{
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+  z-index: 10;
+  padding: 0.8rem;
+  animation: ani04 1.1s linear;
+}
+.seven::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 12vh;
+  background: url(../image/Rectangle\ 69.svg)no-repeat;
+  z-index: -1;
+}
+
+/* 스크롤이벤트 */
+.one.scr1{
+  margin-left:-2200px;
+  transition:0.75s;
+}
+.two.scr2{
+  margin-right:-2000px;
+  transition:0.75s;
+}
+.three.scr3{
+  margin-left:-1800px;
+  transition:0.75s;
+}
+.four.scr4{
+  margin-right:-1450px;
+  transition:0.75s;
+}
+.five.scr5{
+  transition:0.75s;
+}
+.six.scr6{
+  margin-top:-800px;
+  transition:0.75s;
+}
+.seven.scr7{
+  margin-top:-350px;
+  transition:0.75s;
+}
+
+footer{
+  padding:7vh 0;
+  margin-bottom:8vh;
+  overflow: hidden;
+  height:350px;
+  font-weight:500;
+}
+address{
+  text-align: left;
+  position: relative;
+  font-size:3vw;
+  padding: 5% 0 0 5%;
+  color: #fff;
+  margin: 10%;
+}
+address:before{
+  content: '';
+  position: absolute;
+  top: -6vh;
+  left: 0;
+  width: 100vw;
+  height:80vh;
+  background: url(../image/footerbg.svg)no-repeat;
+  background-size: contain;
+}
+footer p{
+  font-style: normal;
+}
+
+#tap_bar{bottom:0px;}
+#top{bottom:8vh;}

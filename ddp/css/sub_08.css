@@ -1,0 +1,76 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+#wrap{background-color: #202020;}
+#tap_bar{
+  backdrop-filter:blur(30px);
+  -webkit-backdrop-filter:blur(30px);
+}
+
+/* 자주묻는 질문 */
+#faq{
+  width: 100%;
+  max-width: 90%;
+  margin: auto auto 50px auto;
+  padding-top: 50px;
+  line-height: 30px;
+}
+#faq h1{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 50px 0;
+  font-family: 'Cafe24ClassicType-Regular';
+  color: #D6D6D6;
+}
+.accordion .title,
+.accordion .content {
+  background-color: #FEFAE0;
+  position: relative;
+  padding: 10px 60px;
+  font-size: 4vw;
+}
+.accordion .title {
+  cursor: pointer;
+  border-bottom: 1px dashed #000;
+}
+.accordion .title:before {
+  content:'';
+  position: absolute;
+  top: 0.5vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/ques.svg)no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.accordion .title:after {
+  content:'\e5cf';
+  font-family: 'Material Icons Outlined';
+  position: absolute;
+  top: 0;
+  right: 5vw;
+  margin-top: 5px;
+  transition: 0.35s;
+}
+.accordion .content:before {
+  content:'';
+  position: absolute;
+  top: 3vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/answer.svg)no-repeat;
+  width: 100%;
+  height:100%;
+}
+.accordion .title.active:after {content: '\e5ce';}
+.accordion .title.active {background-color: #FEFAE0;}
+.accordion .content {
+  display: none;
+  margin-bottom: 7px;
+}
+.accordion .content.active{display: block;} 
+
+footer{ 
+  background-color: #202020;
+}
