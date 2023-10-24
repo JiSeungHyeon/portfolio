@@ -1,8 +1,8 @@
-if (self.name != 'reload') {
+/* if (self.name != 'reload') {
   self.name = 'reload';
   self.location.reload(true);
 }
-else self.name = ''; 
+else self.name = '';  */
 
 /* preloader */
 /* function startLoader(){
